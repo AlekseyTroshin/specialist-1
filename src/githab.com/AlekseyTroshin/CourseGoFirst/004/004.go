@@ -18,6 +18,4 @@ func main() {
 	} else {
 		fmt.Println("два корня")
 	}
-    
-    
 }
