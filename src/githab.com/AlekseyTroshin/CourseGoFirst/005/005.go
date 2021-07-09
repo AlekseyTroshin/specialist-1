@@ -5,7 +5,8 @@ import (
 )
 
 func main() {
-    var a, b int
+    var a, b, count int
+    fmt.Scan(&count)
     fmt.Scan(&a, &b)
 
     for a != 0 && b != 0 {
