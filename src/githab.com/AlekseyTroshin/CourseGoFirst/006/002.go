@@ -1,8 +1,9 @@
+// задача A
 package main
 
 import (
-	"fmt"
 	"bufio"
+	"fmt"
 	"os"
 )
 
@@ -23,7 +24,7 @@ func main() {
 		tvSeriesYouFind = append(tvSeriesYouFind, scanner.Text())
 	}
 
-	outerSeriesYouFind:
+outerSeriesYouFind:
 	for _, seriesYouFind := range tvSeriesYouFind {
 		for _, seriesServise := range tvSeriesServise {
 			if seriesServise == seriesYouFind {

@@ -1,15 +1,18 @@
+// задача H
 package main
 
 import (
-	"fmt"
 	"bufio"
+	"fmt"
 	"os"
+	"strconv"
 )
 
 func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 	var a, b, c int
-	fmt.Scan(&a)
+	scanner.Scan()
+	a, _ = strconv.Atoi(scanner.Text())
 	listWork := []string{}
 	listDo := []int{}
 
@@ -18,11 +21,13 @@ func main() {
 		listWork = append(listWork, scanner.Text())
 	}
 
-	fmt.Scan(&b)
+	scanner.Scan()
+	b, _ = strconv.Atoi(scanner.Text())
 
 	for i := 0; i < b; i++ {
-		fmt.Scan(&c)
-		listDo = append(listDo, c)
+		scanner.Scan()
+		c, _ = strconv.Atoi(scanner.Text())
+		listDo = append(listDo, c-1)
 	}
 
 	for _, item := range listDo {
