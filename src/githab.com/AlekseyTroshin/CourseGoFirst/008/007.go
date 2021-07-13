@@ -7,15 +7,22 @@ import (
 )
 
 func main() {
-	var str string
+	var count, max int
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
 	arrRune := []rune(scanner.Text())
 
 	for i := 0; i < len(arrRune); i++ {
-		if i%2 == 0 {
-			str += string(arrRune[i]) + string(arrRune[i]) + string(arrRune[i])
+		if arrRune[i] == 'о' {
+			count++
+		} else {
+			count = 0
+		}
+
+		if max < count {
+			max = count
 		}
 	}
-	fmt.Println(str)
+
+	fmt.Println(max)
 }
