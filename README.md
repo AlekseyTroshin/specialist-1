@@ -4,5 +4,6 @@
 https://contest.yandex.ru/contest/25606
 https://contest.yandex.ru/contest/25622
 https://contest.yandex.ru/contest/25667
+https://contest.yandex.ru/contest/25869
 все задачи от сюда 
 https://stepik.org/lesson/228258/step/1?unit=200791
