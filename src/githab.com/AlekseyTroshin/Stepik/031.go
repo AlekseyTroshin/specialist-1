@@ -5,7 +5,6 @@ import (
 	"strconv"
 )
 
-
 func main() {
 	var a, b int
 	var z string
@@ -14,7 +13,7 @@ func main() {
 	for i := 0; i < a; i++ {
 		j, _ := strconv.Atoi(string(z[i]))
 		b += j
-		if a == i + 1 {
+		if a == i+1 {
 			z += strconv.Itoa(b)
 			if g := strconv.Itoa(b); len(g) <= 1 {
 				break

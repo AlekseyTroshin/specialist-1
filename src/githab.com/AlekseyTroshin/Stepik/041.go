@@ -17,7 +17,3 @@ func vote(n ...int) (int, int) {
 
 	return len(n), sum
 }
-
-
-
-
