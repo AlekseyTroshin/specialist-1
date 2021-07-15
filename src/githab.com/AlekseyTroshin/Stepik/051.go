@@ -1,11 +1,11 @@
 package main
 
 import (
-    "errors"
-    "fmt"
+	"errors"
+	"fmt"
 )
 
 func main() {
-    err := errors.New("my error")
-    fmt.Println("", err)
+	err := errors.New("my error")
+	fmt.Println("", err)
 }

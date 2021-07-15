@@ -4,7 +4,6 @@ import (
 	"fmt"
 )
 
-
 const (
 	a = iota + 1
 	_
