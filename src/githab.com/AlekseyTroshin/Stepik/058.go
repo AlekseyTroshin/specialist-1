@@ -1,14 +1,12 @@
 package main
 
-import (
-  "fmt"
-)
+import "fmt" 
 
-type batteryForTest struct {
+type Battery struct {
   Charge string
 }
 
-func (b batteryForTest) String() string {
+func (b Battery) String() string {
   var begin, end string
   begin = "["
   for i := 0; i < 10; i++ {
@@ -27,8 +25,6 @@ func main() {
   var str string
   fmt.Scan(&str)
   
-  b := batteryForTest{
+  batteryForTest := Battery{
     Charge: str,
   }
-  fmt.Println(b)
-}
