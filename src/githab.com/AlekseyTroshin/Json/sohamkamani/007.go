@@ -13,10 +13,11 @@ type Global struct {
 
 func main() {
 	file, err := os.Open("../datatest/data-20190514T0100.json")
-	bytes, err := ioutil.ReadAll(file)
 		if err != nil {
 	    panic(err)
 	}
+	defer file.Close()
+	bytes, err := ioutil.ReadAll(file)
 	var global []Global
 	json.Unmarshal(bytes, &global)
 	fmt.Printf("%T", global)
