@@ -1,12 +1,12 @@
 package main
 
 import (
-	"fmt"
 	"encoding/json"
+	"fmt"
 )
 
 type Bird struct {
-	Species string `json:"birdType"`
+	Species     string `json:"birdType"`
 	Description string `json:"what it does"`
 }
 

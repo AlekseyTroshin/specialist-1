@@ -1,19 +1,19 @@
 package main
 
 import (
-	"fmt"
 	"encoding/json"
+	"fmt"
 )
 
 type Dimensions struct {
 	Height int
-	Width int
+	Width  int
 }
 
 type Bird struct {
-	Species string
+	Species     string
 	Description string
-	Dimensions Dimensions
+	Dimensions  Dimensions
 }
 
 func main() {

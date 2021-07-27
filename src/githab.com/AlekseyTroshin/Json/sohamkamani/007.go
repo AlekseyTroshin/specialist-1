@@ -1,9 +1,9 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"io/ioutil"
-	"encoding/json"
 	"os"
 )
 
@@ -13,8 +13,8 @@ type Global struct {
 
 func main() {
 	file, err := os.Open("../datatest/data-20190514T0100.json")
-		if err != nil {
-	    panic(err)
+	if err != nil {
+		panic(err)
 	}
 	defer file.Close()
 	bytes, err := ioutil.ReadAll(file)
@@ -24,5 +24,5 @@ func main() {
 	for i := 0; i < 10; i++ {
 		fmt.Printf("%v\n", global[i])
 	}
-	
+
 }
