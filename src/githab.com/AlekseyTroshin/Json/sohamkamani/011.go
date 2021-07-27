@@ -7,16 +7,15 @@ import (
 
 type Bird struct {
 	Species string `json:"birdType"`
-	//hello
-	Description string `json:"what it does,omitempty"`
+	Description string `json:"what it does"`
 }
 
 func main() {
 	pigeon := &Bird {
 		Species: "Pigeon",
+		Description: "likes to eat seed",
 	}
 
-	data, _ := json.Marshal(pigeon)
-
+	data, _ := json.Marshal([]*Bird{pigeon, pigeon})
 	fmt.Println(string(data))
 }

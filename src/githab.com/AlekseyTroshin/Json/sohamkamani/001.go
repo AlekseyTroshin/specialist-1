@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
 	"encoding/json"
+	"fmt"
 )
 
 type MyStoredVariable struct {
@@ -17,6 +17,5 @@ func main() {
 	json.Unmarshal([]byte(myJsonString), &myStore)
 
 	fmt.Printf("%s %T\n", myStore.Some, myStore)
-
 
 }
